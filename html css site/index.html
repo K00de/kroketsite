@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<!-- de head bevat meta-informatie, informatie die niet op de websitepagina komt.
+Onder andere komt hier de favicon, het plaatje wat men boven de zoekbalk ziet bij het tablat, en 
+de titel, de tekst die boven de zoekbalk staat bij het tablat naast de favicon. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thuis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/krokie.png">
+</head>
+
+<!-- De body bevat informatie die op de websitepagina komt. Het element div wordt gebruikt om het document geordend in te delen.
+Zo kan men dingen insluiten, bijvoorbeeld het menu. -->
+
+<body>
+    <div>
+        <!-- het menu is een lijst en wordt qua stijl aangepast in het css bestand met behulp van de id="hoofdmenu".
+        We kunnen een id gebruiken i.p.v. een class omdat het menu eenmalig in dit document/pagina voorkomt en we deze opmaak 
+       gegeven voor geen ander onderdeel nodig hebben. Met de class="active" wordt het duidelijk voor de gebruiker op welke pagina 
+        van de website ze zitten. -->
+        <ul id="hoofdmenu" class="clearfix">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="quiz.html">DE QUIZZ</a></li>
+            <li><a href="history.html">Geschiedenis</a></li>
+            <li><a href="frituur_vs_airfryer.html">Frituur vs Airfryer</a></li>
+            <li><a href="de_beste_kroket.html">De Beste Kroket</a></li>
+            <li style="float:right"><a href="geheim.html">
+                    <!-- Via andere pagina's ga je naar home als je op de kroket in het menu klinkt, maar doe je dit op home kom je een verrassing tegen :) -->
+                    <img src="images/krokie.png" alt="Pracht" style="width:50px;height:23px;">
+                </a></li>
+        </ul>
+    </div>
+    <!-- De class=inhoud zorgt ervoor dat alles wat op de websitepagina zichtbaar is en niet onder de menubalk verdwijnt. 
+    Dan staat hierook nog de class=doosje deze class zorgt ervoor dat er een gekleurd vlak op deze pagina staat. In het css 
+document staat hoe het doosje eruit ziet. -->
+    <div class="inhoud">
+        <div class="flexinhoud">
+            <!-- h1 betekent dat de letters een hoofdtekst zijn, dus is het groter. Daarna komt er h3 dat betekent dat de tekst daartussen
+            minder belangrijk zijn dan h1 maar nog steeds groter dan normaal. Vervolgens is er de p daartussen staat de normale tekst. 
+            Door de class=inhoud heeft alle tekst dezelfde lettertype.-->
+            <div class="groen">
+                <div class="lichtgroen">
+                    <h1>Welke kroket ben jij?</h1>
+                </div>
+                <h3>Weet deze belangrijke informatie met één klik!</h3>
+                <div class="text">
+                    <p>
+                        Kroketten zijn prachtige dingen die niet onderschat mogen worden.
+                        Denk niet dat jij ooit zo geweldig als een kroket zal zijn.
+                        Je kan wel uitvinden met welke kroket jij goede vrienden zou zijn.
+                    </p>
+                </div>
+            </div>
+            <!-- Dit is een plaatje van een kroket en een broodje. Door de class="image1" is er een rand toegevoegd aan het plaatje. -->
+            <div class="image1">
+                <img src="images/broodje.jpg" alt=Broodje class="border">
+            </div>
+            <div class="groen">
+                <!--Klasse groen zorgt voor de groene achtergrond en witte tekst. -->
+                <div class="lichtgroen">
+                    <h1>De website</h1>
+                </div>
+                <h3>Wat er allemaal te vinden is</h3>
+                <p> Fijn dat u op deze fantastische website bent! Op deze website kunt u informatie vinden over:
+                    de geschiedenis van de kroket, frituur vs airfryer en de beste kroketten! Maar het beste van
+                    de website is natuurlijk
+                    de geweldige krokettenquiz! Doe de quiz en kom erachter welke kroket u bent! </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- https://vision2form.nl/Temp/afbeelding-naast-plaatje.html -->
+<!-- Zo doe je een comment in html -->

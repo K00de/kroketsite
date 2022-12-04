@@ -1,0 +1,134 @@
+html,
+
+/*Deze body geeft aan welke kleur de achtergrond van onze website heeft
+en hoe de lettertype eruit komt te zien.*/
+body {
+  background-color: #F6EDEE;
+  text-align: center;
+  font-family: cursive;
+  margin: 0;
+  color: #313E2D;
+}
+
+/*Deze container bevat de tekst en andere inhoud in de Quiz-pagina en zorgt ervoor
+dat er stipjes langs de randjes staan.*/
+.container {
+  height: 100%;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-left: 3px dotted;
+  border-right: 3px dotted;
+}
+
+h1 {
+  margin: 5px;
+  padding: 10px;
+}
+
+/* Om tekst een lichtgroene achtergrond te kunnen geven, maar alleen waar wij het willen. */
+.lichtgroen {
+  background-color: #85a77b;
+}
+
+/*Is vervolg van de menubalk. Er is geen hoogte aangegeven hoe groot die moet zijn omdat hij 
+flexible is als de website op grotere of kleinere manier wordt geopend.*/
+#hoofdmenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+/*dit zorgt dat de menu(linkjes) naast elkaar staan wanneer het scherm minimaal 600px heeft. 
+Anders staat het onder elkaar.*/
+@media only screen and (min-width: 600px) {
+  li {
+    float: left;
+    border-right: 1px solid #3A3C39;
+  }
+}
+
+/* padding zorgt voor streepje i menubalk, stom -> nu werkt dat weer wel en dat andere niet huuhh */
+/*Dit zijn de teksten en links die in de menubalk staan. Zo is de tekst zwart.*/
+li a {
+  display: block;
+  color: #3A3C39;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*De kleur van het "blokje" pagina die actief is. Dus op welke pagina de kijker is.*/
+.active {
+  background-color: #F6EDEE;
+}
+
+/*zorgt ervoor dat het menu op de juiste plek blijft staan*/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*zorgt ervoor dat de tekst inhoud vanaf 60px van boven pas begint,
+zodat het onder het menubalk valt. De menubalk is 60px.
+font-family: cursive; is het lettertype*/
+.inhoud {
+  margin-top: 30px;
+  font-family: cursive;
+}
+
+/* Achtergrond van de doosjes op de home-pagina is groen en de kleur van de tekst is wit. */
+.groen {
+  background-color: #313E2D;
+  color: white;
+}
+
+/*Zorgt ervoor dat de containers op de home-pagina naast elkaar staan.*/
+.flexinhoud {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Padding om de tekst in de containers, 
+anders zit de tekst helemaal tegen de randjes aan en dat is lelijk. */
+.flexinhoud>div {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* dit zorgt ervoor dat er randen om alle plaatjes komen die de class border heeft */
+.border {
+  border: 5px solid rgb(255, 255, 255);
+}
+
+/* Container2 is een klasse die gebruikt wordt op de beste kroket pagina.
+Hiermee kan de tekst en het bijbehorende plaatje naast elkaar. */
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+/* Hierdoor nemen de plaatjes dezelfde breedte in beslag en ziet de pagina er netter uit.
+De grow en shrink staan op 0 zodat de afbeeldingen niet veranderen en de flex-basis
+zorgt ervoor dat de plaatje 25% van de breedte innemen. */
+.image {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%;
+}
+
+/* De tekst op onze website staat standaard in het midden, dus dit is gebruikt om teksten in de beste kroket
+en frituur vs airfryer naar links te zetten. */
+.tekstlinks {
+  text-align: left;
+  padding-left: 20px;
+}
+
+/* Voor wat variatie af en toe kan de tekst zo ook naar rechts (frituur vs airfryer). */
+.tekstrechts {
+  text-align: right;
+  padding-right: 20px;
+}
